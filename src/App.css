@@ -1,0 +1,158 @@
+.App {
+  /* background-color: blue; */
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Heading {
+  font-size: 2.5rem;
+  color: rgb(2, 2, 83);
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.TodoFormWrapper {
+  display: flex;
+
+  margin-bottom: 1rem;
+}
+
+.TodoFormWrapper input {
+  margin-right: 1rem;
+
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-color: lightgray;
+  border: 0px;
+  border-radius: 0.3rem;
+  
+  box-shadow: -3px 19px 59px 0px rgba(125,125,125,0.34);
+  -webkit-box-shadow: -3px 19px 59px 0px rgba(125,125,125,0.34);
+  -moz-box-shadow: -3px 19px 59px 0px rgba(125,125,125,0.34);
+
+  color: gray;
+}
+
+.TodoFormWrapper button {
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  background-color: rgb(152, 76, 223);
+  color: white;
+  font-weight: 600;
+  
+  outline: none;
+  border-color: transparent;
+  cursor: pointer;
+
+}
+
+input:focus {
+  outline-color: lightgray; 
+}
+
+button:focus {
+  outline-color: none;
+}
+
+.FilterButton {
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  margin: 1rem 0.2rem;
+  cursor: pointer;
+
+  background-color: rgb(150, 149, 149);
+  color: white;
+  outline: none;
+  border-color: transparent;
+
+  font-size: 1rem;
+}
+
+.ActiveFillterButton {
+  background-color: rgb(77, 168, 168);
+}
+
+.TodosCardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.TodoCard {
+  width: 100%;
+
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+
+.TodoCheckbox {
+  width: 35px;
+  height: 35px;
+  
+  cursor: pointer;
+  flex: 1;
+}
+
+.CompletedTodo {
+  text-decoration: line-through;
+}
+
+.TodoName {
+  font-size: 1.2rem;
+  background-color: white;
+  border: none;
+  outline: none;
+
+  flex: 3;
+  color: gray;
+}
+
+.EditButton {
+  font-size: 1rem;
+  color: white;
+  padding: 0.8rem;
+
+  background-color: rgb(6, 146, 189);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.DeleteButton {
+  font-size: 1rem;
+  color: white;
+  padding: 0.8rem;
+
+  background-color: rgb(143, 37, 37);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.TodoChecked {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(194, 194, 194);
+  margin-right: 5px;
+}
